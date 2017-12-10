@@ -6,10 +6,10 @@ Completed solutions for the JavaScript 30 Day Challenge.
 
 ## Challenges
 
-- [ ] 1 JavaScript Drum Kit
-- [ ] 2 JavaScript and CSS Clock
-- [ ] 3 CSS Variables
-- [ ] 4 Array Cardio Day 1
+- [x] 1 JavaScript Drum Kit
+- [x] 2 JavaScript and CSS Clock
+- [x] 3 CSS Variables
+- [x] 4 Array Cardio Day 1
 - [ ] 5 Flex Panel Gallery
 - [ ] 6 Type Ahead
 - [ ] 7 Array Cardio Day 2
