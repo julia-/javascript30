@@ -78,7 +78,15 @@
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
-    const lastNameAtoZ = people.sort((a,b) => a + b);
+    // const lastNameAtoZ = people.sort((a,b) => a + b);
+
+    const lastNameAtoZ = people.sort(function (prevPerson, nextPerson) {
+        const [prevLastName, prevFirstName] = prevPerson.split(', ');
+        const [nextLastName, nextFirstName] = nextPerson.split(', ');
+
+        return prevLastName > nextLastName ? 1 : -1;
+      });
+
     console.table(lastNameAtoZ);
 
     // 8. Reduce Exercise
