@@ -21,12 +21,38 @@
 
     fetch(endpoint)
       .then(response => response.json())
-      //.then(data => cities.push(...data) // wes bos solution
+      // .then(data => cities.push(...data)) // wes bos solution
       .then(data => {
         data.map(obj => (
           cities.push({ city: obj.city, state: obj.state })
         ))
       })
+
+    function findMatches(input, cities) {
+      return cities.filter(place => {
+        const regex = new RegExp(input, 'gi')
+        return place.city.match(regex) || place.state.match(regex)
+      })
+    }
+
+    function displayMatches() {
+      const input = this.value
+      const matchArray = findMatches(input, cities)
+
+      while(suggestions.firstChild) {
+        suggestions.removeChild(suggestions.firstChild);
+      }
+
+      matchArray.forEach(match => {
+        const option = document.createElement('li')
+        option.textContent = `${match.city}, ${match.state}`
+        suggestions.appendChild(option)
+      })
+    }
+
+    const searchInput = document.querySelector('.search')
+    const suggestions = document.querySelector('.suggestions')
+    searchInput.addEventListener('input', displayMatches)
   </script>
   </body>
 </html>
