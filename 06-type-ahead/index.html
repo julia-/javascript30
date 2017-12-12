@@ -21,12 +21,12 @@
 
     fetch(endpoint)
       .then(response => response.json())
-      // .then(data => cities.push(...data)) // wes bos solution
-      .then(data => {
-        data.map(obj => (
-          cities.push({ city: obj.city, state: obj.state })
-        ))
-      })
+      .then(data => cities.push(...data)) // wes bos solution
+      // .then(data => {
+      //   data.map(obj => (
+      //     cities.push({ city: obj.city, state: obj.state })
+      //   ))
+      // })
 
     function findMatches(input, cities) {
       return cities.filter(place => {
@@ -40,7 +40,7 @@
       const matchArray = findMatches(input, cities)
 
       while(suggestions.firstChild) {
-        suggestions.removeChild(suggestions.firstChild);
+        suggestions.removeChild(suggestions.firstChild)
       }
 
       matchArray.forEach(match => {
@@ -49,6 +49,20 @@
         suggestions.appendChild(option)
       })
     }
+
+    // wes bos solution
+    // function displayMatches() {
+    //   const matchArray = findMatches(this.value, cities)
+    //   const html = matchArray.map(place => {
+    //     return `
+    //       <li>
+    //         <span class="name">${place.city}, ${place.state}</span>
+    //         <span class="population">${place.population}</span>
+    //       </li>
+    //     `
+    //   }).join('')
+    //   suggestions.innerHTML = html
+    // }
 
     const searchInput = document.querySelector('.search')
     const suggestions = document.querySelector('.suggestions')
