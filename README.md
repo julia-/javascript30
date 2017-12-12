@@ -10,7 +10,7 @@ Completed solutions for the JavaScript 30 Day Challenge.
 - [x] 2 JavaScript and CSS Clock
 - [x] 3 CSS Variables
 - [x] 4 Array Cardio Day 1
-- [ ] 5 Flex Panel Gallery
+- [x] 5 Flex Panel Gallery
 - [ ] 6 Type Ahead
 - [ ] 7 Array Cardio Day 2
 - [ ] 8 Fun with HTML5 Canvas
