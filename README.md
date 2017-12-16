@@ -14,8 +14,8 @@ Completed solutions for the JavaScript 30 Day Challenge.
 - [x] 6 Type Ahead
 - [x] 7 Array Cardio Day 2
 - [x] 8 Fun with HTML5 Canvas
-- [ ] 9 Dev Tools Domination
-- [ ] 10 Hold Shift and Check Checkboxes
+- [x] 9 Dev Tools Domination
+- [x] 10 Hold Shift and Check Checkboxes
 - [ ] 11 Custom Video Player
 - [ ] 12 Key Sequence Detection
 - [ ] 13 Slide in on Scroll
